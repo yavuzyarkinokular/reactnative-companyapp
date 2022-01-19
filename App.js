@@ -21,7 +21,6 @@ const App = () => {
     } else {
       setIsAppFirstLaunched(false);
     }
-
     // AsyncStorage.removeItem('isAppFirstLaunched');
   }, []);
 

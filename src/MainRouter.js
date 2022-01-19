@@ -1,6 +1,6 @@
 import React from "react";
-import { StyleSheet, PixelRatio } from "react-native";
-import { NavigationContainer } from "@react-navigation/native";
+import { StyleSheet, PixelRatio, Switch } from "react-native";
+import { NavigationContainer, DarkTheme } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 
 // NavBar

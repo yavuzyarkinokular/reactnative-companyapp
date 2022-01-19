@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   View,
   StyleSheet,
@@ -7,12 +7,15 @@ import {
   Linking,
   Text,
   TouchableOpacity,
+  Switch,
 } from "react-native";
 import { Button } from "react-native-paper";
 import { Card } from "react-native-shadow-cards";
 import Icon from "react-native-vector-icons/FontAwesome";
 
 export default function ContactUs({}) {
+  const [isEnabled, setIsEnabled] = useState(false);
+  const toggleSwitch = () => setIsEnabled((previousState) => !previousState);
   return (
     <ScrollView>
       <View style={styles.MainView}>
@@ -28,6 +31,23 @@ export default function ContactUs({}) {
             style={styles.imageSpec}
           ></Image>
         </Card>
+        <View
+          style={{
+            margin: 25,
+            alignItems: "center",
+            flexDirection: "row",
+            justifyContent: "center",
+          }}
+        >
+          <Text> Koyu Tema</Text>
+          <Switch
+            trackColor={{ false: "#767577", true: "#81b0ff" }}
+            thumbColor={isEnabled ? "#f5dd4b" : "#f4f3f4"}
+            ios_backgroundColor="#3e3e3e"
+            onValueChange={toggleSwitch}
+            value={isEnabled}
+          ></Switch>
+        </View>
         <TouchableOpacity
           style={[styles.fakebutton, styles.fakebuttonClose]}
           onPress={() => Linking.openURL("tel:+16475003517")}

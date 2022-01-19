@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   View,
   Text,
   TouchableOpacity,
   Linking,
   StyleSheet,
+  Switch,
 } from "react-native";
 
 export default function HomeScreen({ navigation }) {
