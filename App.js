@@ -2,7 +2,7 @@ import "react-native-gesture-handler";
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
-import OnboardingScreen from "./src/OnboardingScreen";
+import OnboardingScreen from "./components/OnboardingScreen";
 import HomeScreen from "./src/HomeScreen";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 const Stack = createStackNavigator();
