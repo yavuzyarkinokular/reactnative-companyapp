@@ -601,6 +601,14 @@ if (PixelRatio.get() == 2) {
   IMAGE_SPEC = "100%";
 }
 const styles = StyleSheet.create({
+  root: {
+    width: "100%",
+    height: "100%",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+  },
   fakebutton: {
     borderRadius: 10,
     paddingHorizontal: 30,
