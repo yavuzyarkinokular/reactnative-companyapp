@@ -114,7 +114,7 @@ const OnboardingScreen = ({ navigation }) => {
             <View style={{ height: 50 }}>
               <TouchableOpacity
                 style={styles.btn}
-                onPress={() => navigation.replace("HomeScreen")}
+                onPress={() => navigation.replace("MainRouter")}
               >
                 <Text style={{ fontWeight: "bold", fontSize: 15 }}>
                   KULLANMAYA BAŞLA
