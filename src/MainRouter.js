@@ -1,8 +1,6 @@
 import React from "react";
 import { StyleSheet, PixelRatio } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
-//Onboarding Lib
-import AsyncStorage from "@react-native-async-storage/async-storage";
 import { createStackNavigator } from "@react-navigation/stack";
 
 // NavBar
@@ -16,7 +14,7 @@ import ContactUs from "./ContactUs";
 import AltSirketler from "./AltSirketler";
 import Yatırımfırsatları from "./Yatırımfırsatları";
 import Referanslar from "./Referanslar";
-import AnaSayfa from "./AnaSayfa";
+import HomeScreen from "./HomeScreen";
 // Stackler
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -54,7 +52,7 @@ function MainRouter() {
                 headerStyle: { backgroundColor: "rgb(32,151,190)" },
               }}
             >
-              <HomeStack.Screen name="World17 Group" component={AnaSayfa} />
+              <HomeStack.Screen name="World17 Group" component={HomeScreen} />
               <HomeStack.Screen name="Hakkımızda" component={Aboutus} />
               <HomeStack.Screen
                 name="Alt Şirketlerimiz"
@@ -159,4 +157,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default HomeScreen;
+export default MainRouter;
