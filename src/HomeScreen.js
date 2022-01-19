@@ -12,7 +12,7 @@ import Icon from "react-native-vector-icons/FontAwesome";
 // Screens
 import LoginPage from "./LoginPage";
 import Aboutus from "./Aboutus";
-import Aboutuss from "./Aboutuss";
+import ContactUs from "./ContactUs";
 import AltSirketler from "./AltSirketler";
 import Yatırımfırsatları from "./Yatırımfırsatları";
 import Referanslar from "./Referanslar";
@@ -109,7 +109,7 @@ function HomeScreen() {
                 headerStyle: { backgroundColor: "rgb(32,151,190)" },
               }}
             >
-              <ContactStack.Screen name="İletişim" component={Aboutuss} />
+              <ContactStack.Screen name="İletişim" component={ContactUs} />
             </ContactStack.Navigator>
           )}
         </Tab.Screen>
